@@ -1,0 +1,121 @@
+div {
+    cursor: default;
+}
+
+.post-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: default;
+}
+
+.post-div:nth-child(odd) {
+    background-color: lightblue;
+}
+
+.post-div:nth-child(even) {
+    background-color: bisque;
+}
+
+.post-id {
+    width: 48px;
+    padding: 15px 0px;
+    margin: 0 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid darkgray;
+    background-color: lightblue;
+}
+
+.background-bisque {
+    background-color: bisque;
+}
+
+.post-title {
+    width: 300px;
+    padding: 0 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.post-description {
+    width: 400px;
+    margin-right: 20px;
+    padding: 0 20px;
+    border-right: 1px solid darkgray;
+    border-left: 1px solid darkgray;
+}
+
+.post-buttonDel,
+.buttonOk {
+    position: relative;
+    display: block;
+    padding: 5px 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid navy;
+}
+
+.buttonOk {
+    margin: 20px 0;
+    box-shadow: 0 2px 2px 0 black, inset 2px 2px 2px 0 lightblue;
+    background-color: lightblue;
+}
+
+.post-buttonDel:before {
+    position: absolute;
+    content: "\2718";
+    left: 18px;
+    top:3px;
+    color: darkgray;
+}
+
+.blind-window {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(240, 255, 255, 0.35);
+}
+
+.alert-window {
+    position: fixed;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+    width: 300px;
+    height: auto;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: bisque;
+    border: 2px solid navy;
+    text-align: center;
+    box-shadow: 2px 2px 3px 0 black;
+/*, inset 2px 2px 2px 0 white;*/
+}
+
+.title-alert-window {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    user-select: none;
+    background-color: #1c70c4;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid navy;
+    /*box-shadow: 0 1px 1px 0 black, inset 1px 1px 1px 0 white;*/
+}
+
+.mess-alert-window {
+
+}
